@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+nav {
+    background-color: #ffffff;
+}
+
+button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+input {
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #1d4ed8;
+    outline: none;
+}
+
+/* Improved card styling */
+.card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin: 1rem 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    border-radius: 0.5rem;
+    object-cover: cover;
+    height: 8rem;
+    width: 100%;
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.card p {
+    color: #4a5568;
+    margin-top: 0.25rem;
+}
+
+.card input {
+    margin-top: 0.5rem;
+}
+
+.card button {
+    background-color: #1d4ed8;
+    color: #ffffff;
+    padding: 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #2563eb;
+}
+
+/* Custom alert box styling */
+.alert-box {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f56565;
+    color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+}

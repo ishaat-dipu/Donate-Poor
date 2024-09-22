@@ -28,3 +28,46 @@
         <button id="donation-btn" class="text-green-500 font-semibold mx-2 hover:bg-green-500 hover:text-white">Donation</button>
         <button id="history-btn" class="text-blue-500 font-semibold mx-2 hover:bg-blue-500 hover:text-white">History</button>
     </div>
+
+    <div class="container mx-auto px-4 py-6">
+        <div id="donation-section">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Feni Donation Card -->
+                <div class="card">
+                    <img src="assets/feni.png" alt="Feni" class="h-32 w-full object-cover rounded">
+                    <h2 class="text-xl font-semibold mt-2">Feni Donation</h2>
+                    <p class="text-gray-600">Help the people of Feni.</p>
+                    <p class="text-gray-600">Current Donation: <span id="feni-donation">৳0</span></p>
+                    <input type="number" id="feni-amount" class="border p-2 w-full mt-2" placeholder="Enter amount">
+                    <button class="bg-blue-500 text-white p-2 w-full mt-2" onclick="donate('feni')">Donate Now</button>
+                </div>
+                <!-- Noakhali Donation Card -->
+                <div class="card">
+                    <img src="assets/noakhali.png" alt="Noakhali" class="h-32 w-full object-cover rounded">
+                    <h2 class="text-xl font-semibold mt-2">Noakhali Donation</h2>
+                    <p class="text-gray-600">Help the people of Noakhali.</p>
+                    <p class="text-gray-600">Current Donation: <span id="noakhali-donation">৳0</span></p>
+                    <input type="number" id="noakhali-amount" class="border p-2 w-full mt-2" placeholder="Enter amount">
+                    <button class="bg-blue-500 text-white p-2 w-full mt-2" onclick="donate('noakhali')">Donate Now</button>
+                </div>
+                <!-- Quota Protest Donation Card -->
+                <div class="card">
+                    <img src="assets/quota-protest.png" alt="Quota Protest" class="h-32 w-full object-cover rounded">
+                    <h2 class="text-xl font-semibold mt-2">Quota Protest Donation</h2>
+                    <p class="text-gray-600">Support the quota protest.</p>
+                    <p class="text-gray-600">Current Donation: <span id="quota-donation">৳0</span></p>
+                    <input type="number" id="quota-amount" class="border p-2 w-full mt-2" placeholder="Enter amount">
+                    <button class="bg-blue-500 text-white p-2 w-full mt-2" onclick="donate('quota')">Donate Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="history-section" class="hidden">
+            <h2 class="text-2xl font-semibold mt-4">Donation History</h2>
+            <ul id="history-list" class="list-disc pl-5 mt-2"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
