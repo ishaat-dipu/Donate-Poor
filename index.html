@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow-md sticky top-0">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="blog.html" class="text-blue-500 font-semibold">Blog</a>
+            </div>
+            <div class="flex items-center">
+                <img src="assets/logo.png" alt="Logo" class="h-10">
+                <span class="ml-2 font-bold">Donate Bangladesh</span>
+            </div>
+            <div class="flex items-center">
+                <span class="mr-4">Balance: <span id="account-balance">৳90000</span>
+                <img src="assets/coin.png" alt="Coin" class="inline h-5"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-2 flex justify-center items-center">
+        <button id="donation-btn" class="text-green-500 font-semibold mx-2 hover:bg-green-500 hover:text-white">Donation</button>
+        <button id="history-btn" class="text-blue-500 font-semibold mx-2 hover:bg-blue-500 hover:text-white">History</button>
+    </div>
